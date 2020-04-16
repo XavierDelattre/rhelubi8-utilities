@@ -19,4 +19,8 @@ RUN wget "https://github.com/openshift/origin/releases/download/v3.11.0/openshif
 RUN cd /tmp; \
     wget "https://repo.mysql.com/mysql80-community-release-el8-1.noarch.rpm"; \
     yum localinstall -y mysql80-community-release-el8-1.noarch.rpm; \
-    yum -y install mysql; \
+    yum -y install mysql;
+
+RUN wget "https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64" -O "/tmp/jq"; \
+    chmod +x /tmp/jq; \
+    mv /tmp/jq /usr/bin/;

@@ -9,3 +9,4 @@ A simple docker image based on `registry.access.redhat.com/ubi8/ubi:8.1-406` wit
 * mc (minio command line tool)
 * oc (openshift 3.11 command line tool)
 * mysql client
+* jq (1.6)
